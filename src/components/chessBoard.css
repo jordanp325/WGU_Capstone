@@ -1,0 +1,76 @@
+
+/* .chessboard.background{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+
+    /* background-color: black; */
+    /* border-radius: 10px; */
+/*} */
+.chessboard.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* width: 97%;
+    height: 97%; */
+}
+.chessboard.container.white{
+    flex-direction: row;
+}
+.chessboard.container.black{
+    flex-direction: row-reverse;
+}
+.chessboard.column{
+    display: flex;
+    width: 12.5%;
+    height: 100%;
+}
+.chessboard.column.white{
+    flex-direction: column-reverse;
+}
+.chessboard.column.black{
+    flex-direction: column;
+}
+
+.chessboard.square{
+    position: relative;
+    height: 12.5%;
+    width: 100%;
+    /* display: flex; */
+}
+.chessboard.square.dark{
+    background-color: rgb(115, 142, 153);
+}
+.chessboard.square.light{
+    background-color: whitesmoke;
+}
+.chessboard.square.dark.moved{
+    background-color: rgb(153, 153, 115);
+}
+.chessboard.square.light.moved{
+    background-color: rgb(245, 245, 208)
+}
+.chessboard.square.dark.selected{
+    background-color: rgb(48, 150, 191);
+}
+.chessboard.square.light.selected{
+    background-color: rgb(166, 230, 255);
+}
+
+.chessboard.piece{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    user-select: none;
+}
+.chessboard.move{
+    position: absolute;
+    width: 100%;
+    left: 0;
+}
+.chessboard.capture{
+    position: absolute;
+    width: 100%;
+    left: 0;
+}

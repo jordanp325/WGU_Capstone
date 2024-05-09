@@ -1,0 +1,92 @@
+
+#body{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: calc(100vh - 58px);
+}
+.chessrow{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.chessContainer{
+    height: 80vh;
+    width: 80vh;
+    max-width: 80vw;
+    max-height: 80vw;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#body .playerRow{
+    display: flex;
+    flex-direction: row;
+
+    font-size: 18px;
+    font-weight: 400;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    padding-left: 10px;
+    padding-right: 10px;
+
+    background-color: whitesmoke;
+    border: #000 solid 1px;
+    border-radius: 5px;
+}
+#body .playerRow.turn{
+    border: #00f solid 1px;
+    background-color: rgb(230, 230, 245);
+}
+#body .playerRow.turnyellow{
+    border: #bb0 solid 1px;
+    background-color: rgb(245, 245, 230);
+}
+#body .playerRow.turnred{
+    border: #f00 solid 1px;
+    background-color: rgb(245, 230, 230);
+}
+#body .playerRow .playerName{
+    margin-left: 20px;
+}
+
+
+#waitingContainer{
+    font-size: 69px;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+
+    flex: 3;
+    position: absolute;
+    height: calc(80vh + 4px);
+    width: calc(80vh + 4px);
+    max-width: calc(80vw + 4px);
+    max-height: calc(80vw + 4px);
+    backdrop-filter: blur(3px);
+    background-color: #ffffffbb;
+    user-select: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* 
+#logoContainer button{
+    font-size: 36px;
+    font-weight: 400;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+
+    padding-top: 5px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    border-radius: 5px;
+    background-color: whitesmoke;
+    cursor: pointer;
+} */
