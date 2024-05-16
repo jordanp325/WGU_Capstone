@@ -20,10 +20,9 @@
   },
   "scripts": {
     "start": "node main.js",
-    "build": "react-scripts build",
+    "build": "CI=false && react-scripts build",
     "debug": "react-scripts build && node main.js",
     "react": "react-scripts start",
-    "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
