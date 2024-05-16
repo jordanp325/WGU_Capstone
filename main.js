@@ -2,7 +2,9 @@ const express = require('express');
 const app = express();
 const expressWs = require('express-ws')(app);
 const { MongoClient } = require('mongodb');
-const dbClient = new MongoClient('mongodb://localhost:27017/', {family: 4});
+const dbClient = (process.env.port ? 
+    new MongoClient('mongodb://chess-server:hyTyQuEMcfd9YZu8VegEXZ1AIdsQKcBGwy1vBS6Exzp6Lgvhv5RxK3z9RrDFwxGFmrnEWM3VHBcxACDb1ZrvFg==@chess-server.mongo.cosmos.azure.com:10255/?ssl=true&retrywrites=false&maxIdleTimeMS=120000&appName=@chess-server@', {family: 4})
+    : new MongoClient('mongodb://localhost:27017/', {family: 4}));
 const {createHash, randomBytes} = require('crypto');
 const cookieParser = require('cookie-parser');
 const path = require('path');
