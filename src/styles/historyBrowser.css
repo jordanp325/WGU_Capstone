@@ -1,0 +1,124 @@
+
+#body{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: calc(100vh - 58px);
+    justify-content: center;
+    align-items: center;
+}
+
+
+#historyContainer{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+
+    flex: 3;
+    position: absolute;
+    height: 85vh;
+    width: 85vh;
+    max-width: 85vw;
+    max-height: 85vw;
+    backdrop-filter: blur(3px);
+    background-color: #ffffffbb;
+    user-select: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#historyContainer .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 75%;
+}
+
+#historyContainer h1{
+    font-size: 48px;
+    font-weight: 600;
+
+}
+
+
+#headerContainer{
+    margin-top: 10px;
+}
+#headerContainer p{
+    font-weight: 600;
+}
+.row p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.row .gameDate{
+    flex: 3;
+}
+.row .gameOpponent{
+    flex: 2;
+}
+.row .gameTime{
+    flex: 2;
+}
+.row .gameBonusTime{
+    flex: 2;
+}
+.row .gameWon{
+    flex: 1;
+}
+
+.row#divider{
+    margin-top: -4px;
+    width: calc(75% + 10px);
+    height: 2px;
+    background-color: black;
+}
+.row.gameData{
+    width: calc(75% + 10px);
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 2px;
+}
+.row.gameData:hover{
+    background-color: rgb(182, 224, 242);
+}
+
+
+
+
+
+
+#historyContainer #noHistory{
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#historyContainer #noHistory h2{
+    font-size: 36px;
+    font-weight: 400;
+    text-align: center;
+    
+}
+
+
+#historyContainer button{
+    font-size: 24px;
+    font-weight: 400;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+
+    padding-top: 0px;
+    padding-bottom: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+
+
+    margin-left: 5px;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    cursor: pointer;
+}

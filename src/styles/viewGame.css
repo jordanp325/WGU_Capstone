@@ -1,0 +1,40 @@
+
+#body{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: calc(100vh - 58px);
+    justify-content: center;
+    align-items: center;
+}
+#body:focus{
+    outline: none;
+}
+.chessrow{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.chessContainer{
+    height: 80vh;
+    width: 80vh;
+    max-width: 80vw;
+    max-height: 80vw;
+    display: flex;
+}
+
+/* #logoContainer button{
+    font-size: 36px;
+    font-weight: 400;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+
+    padding-top: 5px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    border-radius: 5px;
+    background-color: whitesmoke;
+    cursor: pointer;
+} */

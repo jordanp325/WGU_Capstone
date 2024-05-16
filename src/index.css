@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: calc(100vh - 4px);
+  width: calc(100vw - 4px);
+}
+
+#root{
+  width: 100%;
+  height: 100%;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+
+#headbar{
+  width: calc(100% - 6px);
+  height: 50px;
+  background-color: #398397;
+  color: whitesmoke;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2px;
+  padding-left: 8px;
+}
+
+#headbar div{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+
+#headbar div img{
+  height: 45px;
+  width: 45px;
+  padding-right: 0px;
+}
+#headbar p{
+  color: whitesmoke;
+  user-select: none;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+#headbar div button{
+  user-select: none;
+  cursor: pointer;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  border-radius: 5px;
+  background-color: whitesmoke;
+}
+
+#headbar div *.clickable{
+  margin-left: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+#headbar div .clickable#gameHistoryButton{
+  margin-right: 25px;
+}
