@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const expressWs = require('express-ws')(app);
 const { MongoClient } = require('mongodb');
-const dbClient = (process.env.port ? 
+const dbClient = (process.env.chessport ? 
     new MongoClient('mongodb://chess-server:hyTyQuEMcfd9YZu8VegEXZ1AIdsQKcBGwy1vBS6Exzp6Lgvhv5RxK3z9RrDFwxGFmrnEWM3VHBcxACDb1ZrvFg==@chess-server.mongo.cosmos.azure.com:10255/?ssl=true&retrywrites=false&maxIdleTimeMS=120000&appName=@chess-server@', {family: 4})
     : new MongoClient('mongodb://localhost:27017/', {family: 4}));
 const {createHash, randomBytes} = require('crypto');
@@ -398,7 +398,7 @@ app.use(express.json(), SERVER_HANDLER, express.static('build'));
 
 
 //start server host and connect to database
-const port = process.env.PORT || 8080;
+const port = process.env.chessport || 8080;
 app.listen(port, () => {
     console.log('\nListening on port '+port+'...');
     dbClient.connect().then(() => {
