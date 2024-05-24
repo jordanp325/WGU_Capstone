@@ -6,7 +6,7 @@ import {DefaultChessArray, LegalMoves, ProgressBoard, InCheck} from '../chessFun
 import { flushSync } from 'react-dom';
 
 export default function Play(){
-    const { sendMessage, lastMessage, readyState } = useWebSocket('ws://' + window.location.host + '/', {onClose: () => updateGameHistory(true, 'Forfeit', 'Your opponent left the game')});
+    const { sendMessage, lastMessage, readyState } = useWebSocket((window.location.protocol == 'https:' ? 'wss://' : 'ws://') + window.location.host + '/', {onClose: () => updateGameHistory(true, 'Forfeit', 'Your opponent left the game')});
     const [details, setDetails] = useState(null);
     const [lastMove, setLastMove] = useState({x:-1, y:-1});
     const [pieces, setPieces] = useState(DefaultChessArray());
