@@ -18,13 +18,13 @@ Successfully connected to MongoDB...
 ```
 You can then connect to the project using http://localhost:8080/
 
-##Technologies
+## Technologies
 This project was built using React JS as the frontend framework. All webpages were built and debugged using React JS.
 This project uses Express JS as the backend server framework. All web requests are handles by either Express JS or React JS (compiled).
 This project accesses a MongoDB Document-based NoSQL database, either local or hosted.
 This project was fully deployed and hosted on Azure using the Azure free pricing model before expiring.
 
-##Features
+## Features
 This project includes the following features:
 - A custom built chess API which handles board states using PGN notation (found in ChessFunctions.js)
 - A user authentication system which stores the user's username and password hash in a database and maintains the session using a sessionKey stored in the browser's cookies
